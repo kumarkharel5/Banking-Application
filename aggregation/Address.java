@@ -1,37 +1,65 @@
-package com.aggregation;
+package com.addressbook;
 
 public class Address {
-	private String cityName;
-	private String streetName;
-	private int zipCode;
 
-	public String getCityName() {
-		return cityName;
+	private String firstName;
+	private String lastName;
+	private int phoneNumber;
+	private int dateOfBirth;
+	private String address;
+	private String emailAddress;
+
+	public String getFirstName() {
+		return firstName;
 	}
 
-	public void setCityName(String cityName) {
-		this.cityName = cityName;
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
 
-	public String getStreetName() {
-		return streetName;
+	public String getLastName() {
+		return lastName;
 	}
 
-	public void setStreetName(String streetName) {
-		this.streetName = streetName;
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 
-	public int getZipCode() {
-		return zipCode;
+	public int getPhoneNumber() {
+		return phoneNumber;
 	}
 
-	public void setZipCode(int zipCode) {
-		this.zipCode = zipCode;
+	public void setPhoneNumber(int phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+
+	public int getDateOfBirth() {
+		return dateOfBirth;
+	}
+
+	public void setDateOfBirth(int dateOfBirth) {
+		this.dateOfBirth = dateOfBirth;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+
+	public void setEmailAddress(String emailAddress) {
+		this.emailAddress = emailAddress;
 	}
 
 	@Override
 	public String toString() {
-		return "\nAddress [cityName=" + cityName + ", streetName=" + streetName + ", zipCode=" + zipCode + "]";
+		return "Address [firstName=" + firstName + ", lastName=" + lastName + ", phoneNumber=" + phoneNumber
+				+ ", dateOfBirth=" + dateOfBirth + ", address=" + address + ", emailAddress=" + emailAddress + "]";
 	}
-
 }
